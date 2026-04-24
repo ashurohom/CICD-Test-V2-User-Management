@@ -10,4 +10,3 @@ def test_create_user():
 def test_invalid_age():
     with pytest.raises(ValueError):
         User("Test", -1)
-        
