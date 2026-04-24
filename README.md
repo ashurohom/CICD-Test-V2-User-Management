@@ -1,6 +1,6 @@
-# 🚀 CI/CD Pipeline Project – Python User Management
+#  CI/CD Pipeline Project – Python User Management
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates how to implement a **CI/CD pipeline using GitHub Actions** for a Python-based backend system.
 
@@ -13,7 +13,7 @@ The project includes:
 
 ---
 
-# 🎯 Purpose of This Project
+#  Purpose of This Project
 
 This project is created for **learning CI/CD concepts**.
 
@@ -25,7 +25,7 @@ It helps to understand:
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```
 user_management/
@@ -45,7 +45,7 @@ user_management/
 
 ---
 
-# 🧠 Code Explanation
+#  Code Explanation
 
 ## 🔹 user.py
 
@@ -58,7 +58,7 @@ class User:
         self.age = age
 ```
 
-👉 Represents a user object (like database model)
+ Represents a user object (like database model)
 
 ---
 
@@ -93,7 +93,7 @@ def test_add():
     assert add(2, 3) == 5
 ```
 
-👉 Ensures code works correctly
+ Ensures code works correctly
 
 ---
 
@@ -104,7 +104,7 @@ pytest
 flake8
 ```
 
-👉 Dependencies required for testing and linting
+ Dependencies required for testing and linting
 
 ---
 
@@ -123,7 +123,7 @@ flake8
 
 ---
 
-# 🔄 CI/CD Pipeline Flow
+#  CI/CD Pipeline Flow
 
 ```
 Developer writes code
@@ -137,61 +137,61 @@ Pipeline runs automatically
 
 ---
 
-# ⚙️ Pipeline Execution Steps
+#  Pipeline Execution Steps
 
-## 1️⃣ Checkout Code
+## 1️ Checkout Code
 
 ```
 uses: actions/checkout@v3
 ```
 
-👉 Downloads repository code to runner
+ Downloads repository code to runner
 
 ---
 
-## 2️⃣ Setup Python
+## 2️ Setup Python
 
 ```
 uses: actions/setup-python@v4
 ```
 
-👉 Installs Python environment
+ Installs Python environment
 
 ---
 
-## 3️⃣ Install Dependencies
+## 3️ Install Dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-👉 Installs pytest and flake8
+ Installs pytest and flake8
 
 ---
 
-## 4️⃣ Run Tests
+## 4️ Run Tests
 
 ```
 pytest
 ```
 
-👉 Runs all test files
-👉 If tests fail → pipeline fails ❌
+ Runs all test files
+ If tests fail → pipeline fails 
 
 ---
 
-## 5️⃣ Run Linting
+## 5️ Run Linting
 
 ```
 flake8 .
 ```
 
-👉 Checks code quality
-👉 If formatting errors → pipeline fails ❌
+ Checks code quality
+ If formatting errors → pipeline fails 
 
 ---
 
-# 🧪 What Happens Internally?
+#  What Happens Internally?
 
 Every time you push code:
 
@@ -208,7 +208,7 @@ Every time you push code:
 
 ---
 
-# ✅ Success Condition
+#  Success Condition
 
 Pipeline passes only if:
 
@@ -217,7 +217,7 @@ Pipeline passes only if:
 
 ---
 
-# ❌ Failure Condition
+#  Failure Condition
 
 Pipeline fails if:
 
@@ -227,7 +227,7 @@ Pipeline fails if:
 
 ---
 
-# 🚀 Advantages of CI/CD
+#  Advantages of CI/CD
 
 * Automatic testing
 * Early bug detection
@@ -237,7 +237,7 @@ Pipeline fails if:
 
 ---
 
-# ⚠️ Challenges in CI/CD
+#  Challenges in CI/CD
 
 * Initial setup complexity
 * Debugging pipeline errors
@@ -245,7 +245,7 @@ Pipeline fails if:
 
 ---
 
-# 👨‍💻 Who Uses CI/CD?
+#  Who Uses CI/CD?
 
 * Backend Developers
 * DevOps Engineers
@@ -253,7 +253,7 @@ Pipeline fails if:
 
 ---
 
-# 🧠 Key Learning from This Project
+#  Key Learning from This Project
 
 * GitHub Actions workflow setup
 * Writing YAML configuration
@@ -263,13 +263,13 @@ Pipeline fails if:
 
 ---
 
-# 💬 Interview Explanation
+#  Interview Explanation
 
 “I implemented a CI pipeline using GitHub Actions for a Python-based project. The pipeline automatically installs dependencies, runs unit tests using pytest, and performs linting using flake8 on every push.”
 
 ---
 
-# 🔥 Future Improvements
+#  Future Improvements
 
 * Add Docker support
 * Add deployment pipeline
@@ -278,7 +278,7 @@ Pipeline fails if:
 
 ---
 
-# 🏁 Conclusion
+#  Conclusion
 
 This project demonstrates how CI/CD helps in:
 
@@ -288,4 +288,4 @@ This project demonstrates how CI/CD helps in:
 
 ---
 
-👉 This is a **beginner-to-intermediate CI/CD project** suitable for interviews and real-world understanding.
+ This is a **beginner-to-intermediate CI/CD project** suitable for interviews and real-world understanding.
