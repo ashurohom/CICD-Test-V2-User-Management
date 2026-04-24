@@ -108,7 +108,7 @@ flake8
 
 ---
 
-# ⚙️ What is CI/CD?
+#  What is CI/CD?
 
 ## CI/CD = Continuous Integration + Continuous Delivery
 
