@@ -4,9 +4,9 @@ import pytest
 
 def test_create_and_get_user():
     service = UserService()
-    service.create_user("Ashu", 25)
-    user = service.get_user("Ashu")
-    assert user.name == "Ashu"
+    service.create_user("Ashitosh", 25)
+    user = service.get_user("Ashitosh")
+    assert user.name == "Ashitosh"
 
 
 def test_user_not_found():
