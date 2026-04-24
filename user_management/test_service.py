@@ -13,3 +13,4 @@ def test_user_not_found():
     service = UserService()
     with pytest.raises(Exception):
         service.get_user("Unknown")
+        
